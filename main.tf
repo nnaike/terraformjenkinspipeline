@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 #Create security group with firewall rules
-resource "aws_security_group" "my_security_group" {
+resource "aws_security_group" "my_tf_secgrp" {
   name        = var.security_group
   description = "security group for Ec2 instance"
 
@@ -21,7 +21,7 @@ resource "aws_security_group" "my_security_group" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
- # outbound from jenkis server
+ # outbound from jenkins server
   egress {
     from_port   = 0
     to_port     = 65535

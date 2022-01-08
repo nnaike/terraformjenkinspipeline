@@ -1,11 +1,11 @@
 variable "aws_region" {
        description = "The AWS region to create things in." 
-       default     = "us-east-2" 
+       default     = "us-east-1" 
 }
 
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
-    default     =  "myJune2021Key" 
+    default     =  "newterrajenkins" 
 }
 
 variable "instance_type" { 
@@ -15,7 +15,7 @@ variable "instance_type" {
 
 variable "security_group" { 
     description = "Name of security group" 
-    default     = "jenkins-sgroup-dec-2021" 
+    default     = "jenkins-sgroup-jan-2022" 
 }
 
 variable "tag_name" { 
